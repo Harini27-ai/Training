@@ -22,7 +22,8 @@ class Solution {
     for(int i=0;i<n;i++){
       nums[i]=sc.nextInt();   
     }
-    int result=maxProduct(nums);
+    Solution sol=new Solution();
+    int result=sol.maxProduct(nums);
     System.out.print(result);
   }
 }
