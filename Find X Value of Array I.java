@@ -27,7 +27,7 @@ class Solution {
     }
     int k=sc.nextInt();
     Solution sol=new Solution();
-    int result=sol.resultArray(nums,k);
-    System.out.println(result);
+    long[] result=sol.resultArray(nums,k);
+    System.out.println(Arrays.toString(result));
   }
 }
