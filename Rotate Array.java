@@ -19,7 +19,7 @@ class Solution {
     }
     int k=sc.nextInt();
     Solution sol=new Solution();
-    int[] result=sol.rotate(nums,k);
-    System.out.println(Arrays.toString(result));
+    sol.rotate(nums,k);
+    System.out.println(Arrays.toString(nums));
   }
 }
