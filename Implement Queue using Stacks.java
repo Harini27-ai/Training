@@ -1,7 +1,4 @@
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.Scanner;
-
+import java.util.*;
 public class Main {
     static class MyQueue {
         private Deque<Integer> input = new ArrayDeque<>();
