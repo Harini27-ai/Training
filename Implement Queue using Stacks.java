@@ -3,11 +3,9 @@ public class Main {
     static class MyQueue {
         private Deque<Integer> input = new ArrayDeque<>();
         private Deque<Integer> output = new ArrayDeque<>();
-
         public void push(int x) {
             input.push(x);
         }
-
         public int pop() {
             peek();
             return output.pop();
