@@ -10,7 +10,6 @@ public class Main {
             peek();
             return output.pop();
         }
-
         public int peek() {
             if (output.isEmpty()) {
                 while (!input.isEmpty()) {
@@ -19,15 +18,12 @@ public class Main {
             }
             return output.peek();
         }
-
         public boolean empty() {
             return input.isEmpty() && output.isEmpty();
         }
-    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         MyQueue myQueue = new MyQueue();
-
         System.out.println("=== Queue Operations Menu ===");
         System.out.println("1: Push (Insert element)");
         System.out.println("2: Pop (Remove front element)");
@@ -35,11 +31,9 @@ public class Main {
         System.out.println("4: Check Empty status");
         System.out.println("5: Exit");
         System.out.println("=============================");
-
         while (true) {
             System.out.print("\nEnter your choice (1-5): ");
             int choice = scanner.nextInt();
-
             switch (choice) {
                 case 1:
                     System.out.print("Enter number to push: ");
@@ -47,7 +41,6 @@ public class Main {
                     myQueue.push(val);
                     System.out.println("Successfully pushed: " + val);
                     break;
-
                 case 2:
                     if (myQueue.empty()) {
                         System.out.println("Queue is Empty! Cannot pop.");
@@ -55,7 +48,6 @@ public class Main {
                         System.out.println("Popped element: " + myQueue.pop());
                     }
                     break;
-
                 case 3:
                     if (myQueue.empty()) {
                         System.out.println("Queue is Empty! No front element.");
@@ -63,7 +55,6 @@ public class Main {
                         System.out.println("Front element (peek): " + myQueue.peek());
                     }
                     break;
-
                 case 4:
                     if (myQueue.empty()) {
                         System.out.println("Queue is EMPTY.");
@@ -71,12 +62,10 @@ public class Main {
                         System.out.println("Queue is NOT empty.");
                     }
                     break;
-
                 case 5:
                     System.out.println("Exiting Program. Thank you!");
                     scanner.close();
                     return;
-
                 default:
                     System.out.println("Invalid choice! Choice must be between 1 and 5.");
             }
