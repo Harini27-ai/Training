@@ -26,7 +26,7 @@ class Solution {
     }
   public static void main(String[] args){
     Scanner sc=new Scanner(System.in);
-    String s=sc.nextLinr();
+    String s=sc.nextLine();
     Solution sol=new Solution();
     boolean result=sol.isValid(s);
     System.out.println(result);
